@@ -1,12 +1,17 @@
 # InterSystems ACME-FHIR Demo
 
+## This is the iris backend for Acme 4 Health application
+
 1. Clone or download this repostory to your local machine.
 2. (optional) Edit the webserver port in `.env`.
 3. (optional, default: SYS) Change IRIS password in `./src-iris/irispw.txt`.
 4. Add your OpenAI key to `./src-iris/openaikey.secret`
 5. Build the container images: `docker-compose build`.
 6. Create and run containers: `docker-compose up -d`
-7. Open IRIS management portal: http://localhost:8081/csp/sys/%25CSP.Portal.Home.zen
+7. The IRIS management portal: http://localhost:8081/csp/sys/%25CSP.Portal.Home.zen
+8. The Acme Application APIs can be seen at http://localhost:8081/swagger-ui/index.html?url=http://localhost:8081/acme/fhirr4/_spec.
+9. The FHIR EndPoint is /fhirserver/fhir/r4/. All the patients in the fhirdata folder was loaded
+10. (Optional) You can point the application to another fhir r4 endpoint changing the config file at / volumes/iris/config/fhirr4.json
 
 Additonal commands
 
