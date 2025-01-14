@@ -1,7 +1,7 @@
 {
-    "fhirPath": "/csp/healthshare/hsods/fhir/r4/",
-    "fhirBaseURL": "172.18.138.36:52773",
-    "fhirAuth": "Basic X3N5c3RlbTpTWVM=",
+    "fhirPath":"/csp/healthshare/hsods/fhir/r4/",
+    "fhirBaseURL":"host.docker.internal:52780",
+    "fhirAuth":"Basic X3N5c3RlbTpTWVM=",
     "fhirHTTPS":0,
     "fhirSSL": "pm.community.intersystems.com",
     "_fhirOAuth": {

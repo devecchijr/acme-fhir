@@ -21,7 +21,7 @@ ClassMethod getModulePaths() As %Library.DynamicObject [ WebMethod ]
 
     Return {
         "fhirr4":"fhirr4",
-        "fhirai":"fhirai",
+        //"fhirai":"fhirai",
         "config":"config"
     }
 }

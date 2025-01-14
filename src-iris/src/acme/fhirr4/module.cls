@@ -17,7 +17,7 @@ Parameter DispatchBaseURL As %String;
 Parameter OnlyOAS As %Boolean = 0;
 
 /// Use TracerBSName for monitoring
-Parameter Traceable As %Boolean = 1;
+Parameter Traceable As %Boolean = 0;
 
 Parameter TracerBSName = "apiPub.tracer.bs";
 
@@ -48,9 +48,9 @@ ClassMethod CreateProjection(classname As %String) As %Status [ CodeMode = gener
         Set webName = appPath
         Set webProperties("DispatchClass") = "acme.fhirr4.module" 
         Set webProperties("NameSpace") = tCurrentNS
-        Set webProperties("Description") = "acme.fhirr4.api API" 
+        Set webProperties("Description") = "acme.fhirr4.api - API" 
         Set webProperties("Enabled") = 1 
-        Set webProperties("AutheEnabled") = 48 
+        Set webProperties("AutheEnabled") = 64 
         Set webProperties("DeepSeeEnabled")=1 
         Set webProperties("CorsHeadersList")="*"
         Set webProperties("CorsAllowlist")="*"

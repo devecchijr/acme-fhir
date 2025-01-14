@@ -46,9 +46,9 @@ ClassMethod CreateProjection(classname As %String) As %Status [ CodeMode = gener
         Set webName = appPath
         Set webProperties("DispatchClass") = "acme.base.module" 
         Set webProperties("NameSpace") = tCurrentNS
-        Set webProperties("Description") = "acme.base.api API" 
+        Set webProperties("Description") = "acme.base.api - API" 
         Set webProperties("Enabled") = 1 
-        Set webProperties("AutheEnabled") = 48 
+        Set webProperties("AutheEnabled") = 64 
         Set webProperties("DeepSeeEnabled")=1 
         Set webProperties("CorsHeadersList")="*"
         Set webProperties("CorsAllowlist")="*"
@@ -59,11 +59,11 @@ ClassMethod CreateProjection(classname As %String) As %Status [ CodeMode = gener
             If tSC=1 {
                 Write !,"Creating ACME App ",webName,"..."
             }
-            Set tSC = ##class(Security.Users).Get("CSPSystem", .usrProperties)
-            If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
-            If $Find(usrProperties("Roles"),"%DB_ACME")=0 Set usrProperties("Roles")=$Select(usrProperties("Roles")="":"",1:",")_"%DB_ACME"
-            Set tSC = ##class(Security.Users).Modify("CSPSystem", .usrProperties)
-            If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
+            //Set tSC = ##class(Security.Users).Get("CSPSystem", .usrProperties)
+            //If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
+            //If $Find(usrProperties("Roles"),"%DB_ACME")=0 Set usrProperties("Roles")=$Select(usrProperties("Roles")="":"",1:",")_"%DB_ACME"
+            //Set tSC = ##class(Security.Users).Modify("CSPSystem", .usrProperties)
+            //If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
         }
         zn tCurrentNS
     }
