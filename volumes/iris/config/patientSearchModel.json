@@ -1,0 +1,88 @@
+{
+    "type": "form",
+    "id": "PatientSearch",
+    "dataTarget": "PatientSearch",
+    "onKeydown": "fn:if (event.key === 'Enter') context._searchPatients(control,context,data,containerControl,backendItem);",
+    "groups": [
+        {
+            "class": "p-fluid",
+            "controlItems": [
+                {
+                    "type": "text",
+                    "name": "given",
+                    "containerClass": "col-12 md:col-4",
+                    "label": "First Name",
+                    "showErrors": true
+                },
+                {
+                    "type": "text",
+                    "name": "family",
+                    "containerClass": "col-12 md:col-4",
+                    "label": "Last Name",
+                    "showErrors": true
+                },
+                {
+                    "type": "calendar",
+                    "name": "birthdate",
+                    "containerClass": "col-12 md:col-4",
+                    "label": "Birthdate",
+                    "showTime": false
+                },
+                {
+                    "type": "text",
+                    "name": "identifier",
+                    "containerClass": "col-12 md:col-4",
+                    "label": "Identifier",
+                    "showErrors": true
+                },
+                {
+                    "name": "gender",
+                    "label": "Gender",
+                    "value": null,
+                    "containerClass": "col-12 md:col-4",
+                    "type": "dropdown",
+                    "showErrors": true,
+                    "pipe": "fn:return item.value ? item.value.value : null",
+                    "optionItems": [
+                        {
+                            "name": "All",
+                            "value": ""
+                        },
+                        {
+                            "name": "Female",
+                            "value": "female"
+                        },
+                        {
+                            "name": "Male",
+                            "value": "male"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "name": "address",
+                    "containerClass": "col-12 md:col-4",
+                    "label": "Address"
+                }
+            ]
+        },
+        {
+            "class": "div",
+            "containerClass": "p-fluid formgrid grid justify-content-center",
+            "controlItems": [
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "button",
+                    "name": "btn1",
+                    "label": "search patients",
+                    "buttonType": "button",
+                    "containerClass": "align-self-start col-12 md:col-4",
+                    "disabled": "fn:return !form.valid;",
+                    "onClick": "fn:context._searchPatients(control,context,data,containerControl,backendItem);"
+                }
+            ]
+        }
+    ]
+}

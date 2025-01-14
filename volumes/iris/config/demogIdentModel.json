@@ -1,0 +1,40 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "type_text",
+            "type_coding_0_code",
+            "value"
+        ],
+        "caption": {
+            "label": "Identifiers List"
+        }
+    },
+    "target": "Patient.0.identifier",
+    "type_text": {
+        "grid": {
+            "header": "System"
+        },
+        "form": {
+            "showNull": false,
+            "label": "System"
+        }
+    },
+    "type_coding_0_code": {
+        "grid": {
+            "header": "Code"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Code"
+        }
+    },
+    "value": {
+        "grid": {
+            "header": "Value"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Value"
+        }
+    }
+}

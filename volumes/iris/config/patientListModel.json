@@ -1,0 +1,134 @@
+{
+    "tableConfig": {
+        "summary": "true",
+        "caption": {
+            "label": "Patient Search Result"
+        },
+        "label": "Patient List"
+    },
+    "target": "PatientList",
+    "UCRBtn": {
+        "grid": {
+            "header": "UCR",
+            "icon": "pi pi-book",
+            "type": "button",
+            "buttonType": "button",
+            "class": "p-button-rounded p-button-primary",
+            "coupled": false,
+            "onClick": "fn:context.router.navigate(['/acme/fhirr4/patientData/'+item.id+'/summary'],{queryParams: {reload: 1}});"
+        }
+    },
+    "id": {
+        "form": {
+            "label": "MPIID"
+        },
+        "grid": {
+            "header": "MPIID"
+        }
+    },
+    "nameIdx_official_text": {
+        "form": {
+            "label": "Name"
+        },
+        "grid": {
+            "header": "Name"
+        }
+    },
+    "nameIdx_official_family": {
+        "form": {
+            "label": "Last Name"
+        },
+        "grid": {
+            "header": "Last Name"
+        }
+    },
+    "nameIdx_official_given_0": {
+        "form": {
+            "label": "First Name"
+        },
+        "grid": {
+            "header": "First Name"
+        }
+    },
+    "gender": {
+        "form": {
+            "label": "Gender"
+        },
+        "grid": {
+            "header": "Gender"
+        }
+    },
+    "identifierIdx_MR_value": {
+        "form": {
+            "label": "Identifier - MRN"
+        },
+        "grid": {
+            "header": "Identifier - MRN"
+        }
+    },
+    "identifierIdx_SB_value": {
+        "form": {
+            "label": "Identifier - SSN"
+        },
+        "grid": {
+            "header": "Identifier - SSN"
+        }
+    },
+    "identifierIdx_DL_value": {
+        "form": {
+            "label": "Identifier - DL"
+        }
+    },
+    "identifierIdx_XX_value": {
+        "form": {
+            "label": "Identifier - XX"
+        }
+    },
+    "birthDate": {
+        "form": {
+            "label": "Birthdate",
+            "type": "date"
+        },
+        "grid": {
+            "header": "Birthdate",
+            "dateFormat": "global_dateFormat"
+        }
+    },
+    "address_0_city": {
+        "form": {
+            "label": "City"
+        }
+    },
+    "address_0_line_0": {
+        "form": {
+            "label": "Address Line"
+        }
+    },
+    "address_0_postalCode": {
+        "form": {
+            "label": "Postal Code"
+        }
+    },
+    "address_0_state": {
+        "form": {
+            "label": "State"
+        }
+    },
+    "extensionIdx_patient-entered-on_valueDateTime": {
+        "form": {
+            "label": "Entered On",
+            "type": "datetime"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    },
+    "fullURL": {
+        "form": {
+            "label": "Full URL"
+        }
+    }
+}

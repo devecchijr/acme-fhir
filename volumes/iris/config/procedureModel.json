@@ -1,0 +1,97 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "code_coding_0_display",
+            "code_coding_0_code",
+            "performer_0_actor_extensionIdx_code-table-detail-care-provider-description_valueString",
+            "extensionIdx_procedure-encounter-number_valueString"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Procedures"
+        }
+    },
+    "target": "Procedure",
+    "code_coding_0_display": {
+        "grid": {
+            "header": "Description"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Description",
+            "containerClass": "col-12"
+        }
+    },
+    "code_coding_0_code": {
+        "grid": {
+            "header": "Code"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Code"
+        }
+    },
+    "status": {
+        "grid": {
+            "header": "Status"
+        },
+        "form": {
+            "label": "Status"
+        }
+    },
+    "performedDateTime": {
+        "grid": {
+            "header": "Perf. Date",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Perf. Date",
+            "type": "datetime"
+        }
+    },
+    "performedPeriod_start": {
+        "grid": {
+            "header": "Start",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Period Start",
+            "type": "datetime"
+        }
+    },
+    "performedPeriod_end": {
+        "grid": {
+            "header": "End",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Period End",
+            "type": "datetime"
+        }
+    },
+    "performer_0_actor_extensionIdx_code-table-detail-care-provider-description_valueString": {
+        "grid": {
+            "header": "Performer"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Performer"
+        }
+    },
+    "extensionIdx_procedure-encounter-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Encounter Number"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

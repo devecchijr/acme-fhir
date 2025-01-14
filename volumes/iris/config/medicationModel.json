@@ -1,0 +1,133 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "medicationReference_code_coding_0_display"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Medications"
+        }
+    },
+    "target": "MedicationStatement",
+    "medicationReference_code_coding_0_display": {
+        "grid": {
+            "header": "Medication"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Medication"
+        }
+    },
+    "extensionIdx_medication-from-time_valueDateTime": {
+        "grid": {
+            "header": "From Time",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "label": "From Time",
+            "type": "datetime"
+        }
+    },
+    "dosage_0_doseAndRate_0_doseQuantity_unit": {
+        "grid": {
+            "header": "Dose Unit"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Dose Unit"
+        }
+    },
+    "dosage_0_doseAndRate_0_doseQuantity_value": {
+        "grid": {
+            "header": "Dose Value"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Dose Value"
+        }
+    },
+    "dosage_0_timing_code_coding_0_display": {
+        "grid": {
+            "header": "Dose Timing"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Dose Timing"
+        }
+    },
+    "extensionIdx_medication-ordered-by_valueReference_extensionIdx_code-table-detail-care-provider-description_valueString": {
+        "grid": {
+            "header": "Care Provider"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Care Provider"
+        }
+    },
+    "dosage_0_timing_repeat_frequency": {
+        "form": {
+            "showNull": false,
+            "label": "Frequency"
+        }
+    },
+    "dosage_0_timing_repeat_period": {
+        "form": {
+            "showNull": false,
+            "label": "Period"
+        }
+    },
+    "dosage_0_timing_repeat_periodUnit": {
+        "form": {
+            "showNull": false,
+            "label": "Unit"
+        }
+    },
+    "extensionIdx_medication-duration_valueCodeableConcept_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Duration"
+        }
+    },
+    "extensionIdx_medication-entered-on_valueDateTime": {
+        "form": {
+            "label": "Entered On",
+            "type": "datetime"
+        }
+    },
+    "extensionIdx_medication-priority_valueCodeableConcept_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Priority"
+        }
+    },
+    "extensionIdx_medication-route_valueCodeableConcept_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Route"
+        }
+    },
+    "identifierIdx_FILL_value": {
+        "form": {
+            "showNull": false,
+            "label": "Filler Id"
+        }
+    },
+    "identifierIdx_PLAC_value": {
+        "form": {
+            "showNull": false,
+            "label": "Placer Id"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

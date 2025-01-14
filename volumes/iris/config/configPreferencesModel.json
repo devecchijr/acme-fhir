@@ -1,0 +1,54 @@
+{
+    "state": "edit",
+    "dataTarget": "config",
+    "groups": [
+        {
+            "label": "Configuration Preferences",
+            "controlItems": [
+                {
+                    "name": "lang",
+                    "label": "Language",
+                    "value": null,
+                    "type": "dropdown",
+                    "showErrors": true,
+                    "containerClass": "col-12 md:col-12",
+                    "pipe": "fn:return item.value!==undefined ? item.value.value : null",
+                    "optionItems": [
+                        {
+                            "name": "English",
+                            "value": "en"
+                        },
+                        {
+                            "name": "Brazilian Portuguese",
+                            "value": "pt-BR"
+                        }
+                    ]
+                },
+                {
+                    "name": "devMode",
+                    "label": "Developer Mode",
+                    "type": "toggle",
+                    "showErrors": true,
+                    "containerClass": "col-12 md:col-12"
+                }
+            ]
+        },
+        {
+            "class": "div",
+            "containerClass": "p-fluid formgrid grid justify-content-center",
+            "controlItems": [
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "button",
+                    "name": "btn1",
+                    "label": "save",
+                    "buttonType": "button",
+                    "disabled": "fn:return !form.valid;",
+                    "onClick": "fn:context.saveItem('userconfig','userConfig',undefined,undefined,'Configuration saved');if (backendItem.lang) context._setLang(backendItem.lang);"
+                }
+            ]
+        }
+    ]
+}

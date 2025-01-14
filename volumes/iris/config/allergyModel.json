@@ -1,0 +1,83 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "code_coding_0_display",
+            "reaction_0_manifestation_0_coding_0_display"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Allergy / Intolerance"
+        }
+    },
+    "target": "AllergyIntolerance",
+    "code_coding_0_display": {
+        "grid": {
+            "header": "Description"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Description"
+        }
+    },
+    "extensionIdx_allergy-discovery-time_valueDateTime": {
+        "grid": {
+            "header": "Discovery Time",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Discovery Time",
+            "type": "datetime"
+        }
+    },
+    "onsetDateTime": {
+        "grid": {
+            "header": "OnSet Time",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "label": "OnSet Time",
+            "type": "datetime"
+        }
+    },
+    "reaction_0_extensionIdx_allergy-severity_valueCodeableConcept_coding_0_display": {
+        "grid": {
+            "header": "Reaction Severity"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Reaction Severity"
+        }
+    },
+    "reaction_0_manifestation_0_coding_0_display": {
+        "grid": {
+            "header": "Reaction Manifestation"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Reaction Manifestation"
+        }
+    },
+    "category_0": {
+        "grid": {
+            "header": "Category"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Category"
+        }
+    },
+    "clinicalStatus_coding_0_code": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

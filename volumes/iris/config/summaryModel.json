@@ -1,0 +1,113 @@
+{
+    "tableConfig": {
+        "rows": 5,
+        "paginator": false,
+        "selectionMode": "single",
+        "onRowSelect": "fn:context.calendarComponent.calendar.gotoDate(item['period_start']);",
+        "showCurrentPageReport": false,
+        "globalFilterFields": [
+            "serviceProvider_name",
+            "class_code"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Last Encounters"
+        }
+    },
+    "target": "Encounter",
+    "class_code": {
+        "grid": {
+            "header": "Class",
+            "type": "button",
+            "class": "fn:return (item['class_code'][0]!=='E') ? (item['class_code'][0]==='I') ? 'p-button-primary p-button-text' : 'p-button-success p-button-text' : 'p-button-warning p-button-text';",
+            "buttonType": "button",
+            "icon": "pi pi-filter",
+            "onClick": "<encounterFilter>"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Encounter Class"
+        }
+    },
+    "extensionIdx_encounter-encounter-m-r-n_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "MRN"
+        }
+    },
+    "extensionIdx_encounter-entered-at_valueReference_reference": {
+        "form": {
+            "showNull": false,
+            "label": "Entered At"
+        }
+    },
+    "extensionIdx_encounter-entered-on_valueDateTime": {
+        "form": {
+            "showNull": false,
+            "label": "Entered On",
+            "type": "datetime"
+        }
+    },
+    "hospitalization_admitSource_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Admit Source"
+        }
+    },
+    "participantIdx_attender_individual_nameIdx_0_text": {
+        "form": {
+            "showNull": false,
+            "label": "Attender Name"
+        }
+    },
+    "serviceProvider_name": {
+        "grid": {
+            "header": "Provider"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Service Provider Name"
+        }
+    },
+    "period_start": {
+        "grid": {
+            "header": "Start",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Period Start",
+            "type": "datetime"
+        }
+    },
+    "period_end": {
+        "grid": {
+            "header": "End",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Period End",
+            "type": "datetime"
+        }
+    },
+    "serviceType_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Service Type"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

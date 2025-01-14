@@ -1,0 +1,22 @@
+{
+    "links":[],
+    "_links_examples":[
+        {
+            "label": "Interop.",
+            "url": "<backendurl>/csp/irisapp/EnsPortal.ProductionConfig.zen?$NAMESPACE=IRISAPP"
+        },
+        {
+            "label": "Monitor",
+            "url": "<backendurl>/csp/irisapp/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=apiPub_Monitor_Dashboard/apiPub%20Monitor.dashboard"
+        },
+        {
+            "label": "APIs Fhir",
+            "url": "<backendurl>/swagger-ui/index.html?url=<backendurl>/acme/fhirr4/_spec"
+        },
+        {
+            "label": "APIs Base",
+            "url": "<backendurl>/swagger-ui/index.html?url=<backendurl>/acme/_spec"
+        }
+    ]
+}
+

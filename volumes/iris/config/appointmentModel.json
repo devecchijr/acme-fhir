@@ -1,0 +1,110 @@
+{
+    "tableConfig": {
+        "selectionMode": "single",
+        "onRowSelect": "fn:context.calendarComponent.calendar.gotoDate(item['start']);",
+        "globalFilterFields": [
+            "identifierIdx_EncounterNumber_value",
+            "start",
+            "end",
+            "appointmentType_coding_0_display"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Appointments"
+        }
+    },
+    "target": "Appointment",
+    "appointmentType_coding_0_display": {
+        "grid": {
+            "header": "Type"
+        },
+        "form": {
+            "showNull": false,
+            "label": "App. Type"
+        }
+    },
+    "identifierIdx_0_value": {
+        "grid": {
+            "header": "App.Number"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Appointment Number"
+        }
+    },
+    "extensionIdx_appointment-entered-at_valueReference_reference": {
+        "form": {
+            "showNull": false,
+            "label": "Entered At"
+        }
+    },
+    "extensionIdx_appointment-entered-on_valueDateTime": {
+        "form": {
+            "showNull": false,
+            "label": "Entered On",
+            "type": "datetime"
+        }
+    },
+    "serviceType_0_coding_0_display": {
+        "grid": {
+            "header": "Service Type"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Service Type"
+        }
+    },
+    "participantIdx_1_actor_nameIdx_0_text": {
+        "grid": {
+            "header": "Practitioner"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Practitioner"
+        }
+    },
+    "participantIdx_2_actor_identifierIdx_0_value": {
+        "grid": {
+            "header": "Organization"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Organization"
+        }
+    },
+    "start": {
+        "grid": {
+            "header": "Start",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Start",
+            "type": "datetime"
+        }
+    },
+    "end": {
+        "grid": {
+            "header": "End",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "End",
+            "type": "datetime"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "dialog": false,
+    "formConfig": {
+        "dataTarget": "Patient.0"
+    },
+    "groupConfig": {
+        "label": "Patient Details",
+        "groupContainerClass": "col-12 md:col-12"
+    },
+    "target": "Patient",
+    "id": {
+        "form": {
+            "showNull": false,
+            "label": "MPIID"
+        }
+    },
+    "nameIdx_official_text": {
+        "form": {
+            "showNull": false,
+            "label": "Name"
+        }
+    },
+    "nameIdx_official_family": {
+        "form": {
+            "showNull": false,
+            "label": "Last Name"
+        }
+    },
+    "nameIdx_official_given_0": {
+        "form": {
+            "showNull": false,
+            "label": "First Name"
+        }
+    },
+    "gender": {
+        "form": {
+            "showNull": false,
+            "label": "Gender"
+        }
+    },
+    "birthDate": {
+        "form": {
+            "showNull": false,
+            "label": "Birthdate",
+            "type": "date"
+        }
+    },
+    "address_0_city": {
+        "showNull": false,
+        "form": {
+            "label": "City"
+        }
+    },
+    "address_0_line_0": {
+        "form": {
+            "showNull": false,
+            "label": "Address Line"
+        }
+    },
+    "address_0_postalCode": {
+        "form": {
+            "showNull": false,
+            "label": "Postal Code"
+        }
+    },
+    "address_0_state": {
+        "form": {
+            "showNull": false,
+            "label": "State"
+        }
+    },
+    "extensionIdx_patient-entered-on_valueDateTime": {
+        "form": {
+            "showNull": false,
+            "label": "Entered On",
+            "type": "datetime"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "fhirPath": "/csp/healthshare/hsods/fhir/r4/",
+    "fhirBaseURL": "172.18.138.36:52773",
+    "fhirAuth": "Basic X3N5c3RlbTpTWVM=",
+    "fhirHTTPS":0,
+    "fhirSSL": "pm.community.intersystems.com",
+    "_fhirOAuth": {
+        "comments":"remove _ from _fhirOAuth node for Oauth Machine to Machine Authentication",
+        "domain":"dev-tz6eol0jyjsyi7g0",
+        "auth": {"client_id":"qAQgXRDAC36z2C0LXkUjDRrZ2wdvgAVD","client_secret":"k9N0vBcB6GzTtAsFzPyNyk202OYcLRDcQ3PZOZT1Ph_bw3sBXos_AczGBho70T_F","audience":"https://host.docker.internal:8443/csp/healthshare/demo/fhir/r4","grant_type":"client_credentials","scope":"user/*.*"}
+    }
+}

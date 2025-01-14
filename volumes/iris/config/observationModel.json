@@ -1,0 +1,53 @@
+{
+    "target": "Observation",
+    "code_coding_0_code": {
+        "form": {
+            "showNull": false,
+            "label": "Item Code"
+        }
+    },
+    "code_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Item Desc."
+        }
+    },
+    "effectiveDateTime": {
+        "form": {
+            "showNull": false,
+            "label": "Effective Date",
+            "type": "datetime"
+        }
+    },
+    "extensionIdx_observation-encounter-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Encounter Number"
+        }
+    },
+    "extensionIdx_observation-observation-value-type_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Value Type"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "valueQuantity_value": {
+        "form": {
+            "showNull": false,
+            "label": "Value Quantity"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

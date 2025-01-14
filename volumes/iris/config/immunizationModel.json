@@ -1,0 +1,68 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "vaccineCode_coding_0_display",
+            "vaccineCode_coding_0_code"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Immunization"
+        }
+    },
+    "target": "Immunization",
+    "occurrenceDateTime": {
+        "grid": {
+            "header": "Date",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Date",
+            "type": "datetime"
+        }
+    },
+    "vaccineCode_coding_0_display": {
+        "grid": {
+            "header": "Description"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Description",
+            "containerClass": "col-12"
+        }
+    },
+    "vaccineCode_coding_0_code": {
+        "grid": {
+            "header": "Code"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Code"
+        }
+    },
+    "vaccineCode_text": {
+        "grid": {
+            "header": "Text"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Text"
+        }
+    },
+    "status": {
+        "grid": {
+            "header": "Status"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

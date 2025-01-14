@@ -1,0 +1,67 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "medicationCodeableConcept_coding_0_display"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Medication Requests"
+        }
+    },
+    "target": "MedicationRequest",
+    "medicationCodeableConcept_coding_0_display": {
+        "grid": {
+            "header": "Medication"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Medication"
+        }
+    },
+    "medicationCodeableConcept_coding_0_code": {
+        "grid": {
+            "header": "Code"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Code"
+        }
+    },
+    "authoredOn": {
+        "grid": {
+            "header": "Req. Date",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "label": "Req. Date",
+            "type": "datetime"
+        }
+    },
+    "requester_display": {
+        "grid": {
+            "header": "Requester"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Requester"
+        }
+    },
+    "intent": {
+        "form": {
+            "showNull": false,
+            "label": "Intent"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

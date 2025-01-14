@@ -1,0 +1,15 @@
+ zn "HSLIB"
+ Do ##class(HS.Util.Installer.Foundation).Install("ACME")
+ zn "ACME"
+ s version="latest" s r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystems.com",r.SSLConfiguration="ISC.FeatureTracker.SSL.Config" d r.Get("/packages/zpm/"_version_"/installer"),$system.OBJ.LoadStream(r.HttpResponse.Data,"c")
+ zpm "enable -community"
+ zpm "install iris-apipub"
+ zpm "install swagger-ui"
+ set file = ##class(%File).%New("/opt/irisbuild/irispw.txt")
+ write file.Open("R")
+ set pwd = file.ReadLine()
+ write ##class(Ens.Config.Credentials).SetCredential("IRIS", "_SYSTEM", pwd)
+ do $System.OBJ.LoadDir("/opt/irisbuild/src/","cuk",,1)
+ do ##class(Ens.Director).SetAutoStart("acme.FoundationProduction",1)
+ set ^EnsPortal.Settings("SuperUser","LastProduction") = "acme.FoundationProduction"
+ 

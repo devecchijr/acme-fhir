@@ -1,0 +1,12 @@
+{
+    "menu": [
+        {
+            "parentLabel": "FHIR",
+            "label": "FHIR - Patient Search",
+            "icon": "pi pi-search",
+            "routerLink": [
+                "/acme/fhirr4/patientSearch"
+            ]
+        }
+    ]
+}

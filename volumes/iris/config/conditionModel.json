@@ -1,0 +1,74 @@
+{
+    "tableConfig": {
+        "globalFilterFields": [
+            "code_coding_0_display",
+            "code_coding_0_code"
+        ],
+        "caption": {
+            "search": true,
+            "label": "Conditions / Diagnosis"
+        }
+    },
+    "target": "Condition",
+    "code_coding_0_display": {
+        "grid": {
+            "header": "Description"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Description",
+            "containerClass": "col-12"
+        }
+    },
+    "code_coding_0_code": {
+        "grid": {
+            "header": "Code"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Code"
+        }
+    },
+    "clinicalStatus_coding_0_code": {
+        "grid": {
+            "header": "Status"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "recordedDate": {
+        "grid": {
+            "header": "Rec. Date",
+            "dateFormat": "global_datetimeFormat2"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Rec. Date",
+            "type": "datetime"
+        }
+    },
+    "category_0_coding_0_display": {
+        "grid": {
+            "header": "Category"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Category"
+        }
+    },
+    "extensionIdx_diagnosis-encounter-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Encounter Number"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

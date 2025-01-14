@@ -1,0 +1,12 @@
+{
+    "menu": [
+        {
+            "parentLabel": "FHIR",
+            "label": "AI Smart Query",
+            "icon": "pi pi-bolt",
+            "routerLink": [
+                "/acme/fhirai/smartQuery"
+            ]
+        }
+    ]
+}

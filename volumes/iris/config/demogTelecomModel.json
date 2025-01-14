@@ -1,0 +1,35 @@
+{
+    "tableConfig": {
+        "caption": {
+            "label": "Contact List"
+        }
+    },
+    "target": "Patient.0.telecom",
+    "system": {
+        "grid": {
+            "header": "System"
+        },
+        "form": {
+            "showNull": false,
+            "label": "System"
+        }
+    },
+    "use": {
+        "grid": {
+            "header": "Use"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Use"
+        }
+    },
+    "value": {
+        "grid": {
+            "header": "Value"
+        },
+        "form": {
+            "showNull": false,
+            "label": "Value"
+        }
+    }
+}

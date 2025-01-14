@@ -1,0 +1,100 @@
+{
+    "formConfig": {
+        "header": "Diagnostic Report Details"
+    },
+    "target": "DiagnosticReport",
+    "imageURL": {
+        "form": {
+            "type": "imagepreview",
+            "class": "shadow-6",
+            "showNull": false,
+            "containerClass": "col-6",
+            "label": "Image"
+        }
+    },
+    "conclusion": {
+        "form": {
+            "showNull": false,
+            "label": "Conclusion",
+            "rows": 8,
+            "type": "textarea"
+        }
+    },
+    "code_coding_0_display": {
+        "form": {
+            "label": "Description"
+        }
+    },
+    "resultFT": {
+        "form": {
+            "containerClass": "col-12",
+            "showNull": false,
+            "label": "Result Report",
+            "rows": 8,
+            "type": "textarea"
+        }
+    },
+    "category_0_text": {
+        "form": {
+            "showNull": false,
+            "label": "Category"
+        }
+    },
+    "effectivePeriod_start": {
+        "form": {
+            "showNull": false,
+            "label": "Period Start",
+            "type": "datetime"
+        }
+    },
+    "issued": {
+        "form": {
+            "showNull": false,
+            "label": "Issued",
+            "type": "datetime"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "basedOn_0_identifierIdx_PLAC_value": {
+        "form": {
+            "showNull": false,
+            "label": "Id"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    },
+    "basedOn_0_extensionIdx_rad-order-encounter-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Enc. Number"
+        }
+    },
+    "presentedForm_0_extensionIdx_result-performed-at_valueReference_name": {
+        "form": {
+            "showNull": false,
+            "label": "Performed At"
+        }
+    },
+    "basedOn_0_extensionIdx_rad-order-entering-organization_valueReference_name": {
+        "form": {
+            "showNull": false,
+            "label": "Entered Org."
+        }
+    },
+    "basedOn_0_requester_extensionIdx_code-table-detail-care-provider-description_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Requester"
+        }
+    }
+}

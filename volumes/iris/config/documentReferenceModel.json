@@ -1,0 +1,91 @@
+{
+    "formConfig": {
+        "header": "Document Details"
+    },
+    "target": "DocumentReference",
+    "category_0_coding_0_code": {
+        "form": {
+            "showNull": false,
+            "label": "Document Category"
+        }
+    },
+    "content_0_attachment_extensionIdx_document-document-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Document Number"
+        }
+    },
+    "date": {
+        "form": {
+            "showNull": false,
+            "label": "Date",
+            "type": "datetime"
+        }
+    },
+    "extensionIdx_document-clinician_valueReference_nameIdx_0_text": {
+        "form": {
+            "showNull": false,
+            "label": "Clinician Name"
+        }
+    },
+    "content_0_attachment_contentType": {
+        "form": {
+            "showNull": false,
+            "label": "Document Content Type"
+        }
+    },
+    "content_0_attachment_creation": {
+        "form": {
+            "showNull": false,
+            "label": "Creation",
+            "type": "datetime"
+        }
+    },
+    "docURL": {
+        "form": {
+            "showNull": false,
+            "type": "ref",
+            "label": "fn:return item['description'] ? item['description'] : item['content.0.attachment.contentType']"
+        }
+    },
+    "content_0_attachment_data": {
+        "form": {
+            "showNull": false,
+            "label": "Content",
+            "containerClass": "align-self-start col-12 md:col-12",
+            "rows": 8,
+            "type": "textarea"
+        }
+    },
+    "extensionIdx_document-encounter-number_valueString": {
+        "form": {
+            "showNull": false,
+            "label": "Encounter Number"
+        }
+    },
+    "extensionIdx_document-entered-by_valueCodeableConcept_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Entered By"
+        }
+    },
+    "status": {
+        "form": {
+            "showNull": false,
+            "label": "Status"
+        }
+    },
+    "type_coding_0_display": {
+        "form": {
+            "showNull": false,
+            "label": "Document Type"
+        }
+    },
+    "meta_lastUpdated": {
+        "form": {
+            "showNull": false,
+            "label": "Last Updated",
+            "type": "datetime"
+        }
+    }
+}

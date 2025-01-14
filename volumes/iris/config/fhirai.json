@@ -1,0 +1,11 @@
+{
+    "fhirAIBaseURL":"host.docker.internal:5005",
+    "fhirAIhttps":0,
+    "fhirAIAuth": "",
+    "fhirAISSL": "pm.community.intersystems.com",    
+    "fhirPath": "/csp/healthshare/demo/fhir/r4/",
+    "fhirBaseURL": "host.docker.internal:8443",
+    "fhirAuth": "Basic X3N5c3RlbTpJU0NERU1P",
+    "fhirHTTPS":1,
+    "fhirSSL": "pm.community.intersystems.com"    
+}
