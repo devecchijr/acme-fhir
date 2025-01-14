@@ -1,7 +1,15 @@
  zn "HSLIB"
+ Set appKey = "/fhirserver/fhir/r4"
+ Set strategyClass = "HS.FHIRServer.Storage.JsonAdvSQL.InteractionsStrategy"
+ Set metadataPackages = $lb("hl7.fhir.r4.core@4.0.1")
+ Do ##class(HS.Util.Installer.Foundation).Install("FHIRServer")
+ Set $namespace = "FHIRServer"
+ Do ##class(HS.FHIRServer.Installer).InstallNamespace()
+ Do ##class(HS.FHIRServer.Installer).InstallInstance(appKey, strategyClass, metadataPackages)
+ Do ##class(HS.FHIRServer.Tools.DataLoader).SubmitResourceFiles("/opt/irisbuild/fhirdata","FHIRServer","/fhirserver/fhir/r4")
  Do ##class(HS.Util.Installer.Foundation).Install("ACME")
  zn "ACME"
- s version="latest" s r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystems.com",r.SSLConfiguration="ISC.FeatureTracker.SSL.Config" d r.Get("/packages/zpm/"_version_"/installer"),$system.OBJ.LoadStream(r.HttpResponse.Data,"c")
+ Set version="latest" s r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystems.com",r.SSLConfiguration="ISC.FeatureTracker.SSL.Config" d r.Get("/packages/zpm/"_version_"/installer"),$system.OBJ.LoadStream(r.HttpResponse.Data,"c")
  zpm "enable -community"
  zpm "install iris-apipub"
  zpm "install swagger-ui"
