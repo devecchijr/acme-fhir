@@ -59,11 +59,11 @@ ClassMethod CreateProjection(classname As %String) As %Status [ CodeMode = gener
             If tSC=1 {
                 Write !,"Creating ACME App ",webName,"..."
             }
-            //Set tSC = ##class(Security.Users).Get("CSPSystem", .usrProperties)
-            //If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
-            //If $Find(usrProperties("Roles"),"%DB_ACME")=0 Set usrProperties("Roles")=$Select(usrProperties("Roles")="":"",1:",")_"%DB_ACME"
-            //Set tSC = ##class(Security.Users).Modify("CSPSystem", .usrProperties)
-            //If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
+            Set tSC = ##class(Security.Users).Get("CSPSystem", .usrProperties)
+            If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
+            If $Find(usrProperties("Roles"),"%DB_ACME")=0 Set usrProperties("Roles")=$Select(usrProperties("Roles")="":"",1:",")_"%DB_ACME"
+            Set tSC = ##class(Security.Users).Modify("CSPSystem", .usrProperties)
+            If 'tSC Throw ##Class(%Exception.StatusException).CreateFromStatus(tSC) 
         }
         zn tCurrentNS
     }
