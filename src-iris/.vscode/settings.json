@@ -1,0 +1,7 @@
+{
+    "objectscript.conn": {
+        "server": "iris-localhost-8081",
+        "ns": "ACME",
+        "active": true
+    }
+}

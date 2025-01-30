@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "exposes fhir application",
+  "main": "host.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Claudio Devecchi Junior",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "http-proxy": "^1.16.2",
+    "http-proxy-middleware": "^0.17.4",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "nodemon": "^3.0.2",
+    "socket.io": "^2.0.3"
+  }
+}

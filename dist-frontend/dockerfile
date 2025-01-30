@@ -1,0 +1,21 @@
+FROM node:16-alpine
+
+WORKDIR /app
+
+# Instalamos o 'unzip' para descompactar
+RUN apk add --no-cache unzip
+
+# Copiamos o arquivo dist.zip para dentro do container
+COPY apollo.zip .
+
+# Descompactamos o dist.zip na pasta /app/dist
+RUN unzip apollo.zip -d dist
+
+COPY /host/* ./
+RUN npm install
+
+# Expomos a porta que serviremos a aplicação
+EXPOSE 3000
+
+# Rodamos o servidor para servir os arquivos compilados
+CMD ["node", "host.js"]

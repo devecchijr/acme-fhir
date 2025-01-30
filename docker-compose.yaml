@@ -1,4 +1,12 @@
 services:
+  frontend:
+    build:
+      context: ./dist-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - iris
   iris:
     build:
       context: ./src-iris
