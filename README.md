@@ -1,6 +1,6 @@
 # InterSystems ACME-FHIR Demo
 
-##  Backend (Apis) and FHIR Server for Acme 4 Health application
+##  IRIS Backend (Apis), IRIS FHIR Server and Acme 4 Health application
 
 1. Clone or download this repostory to your local machine.
 2. (optional) Edit the webserver port in `.env`.
